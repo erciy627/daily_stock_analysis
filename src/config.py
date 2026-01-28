@@ -30,7 +30,7 @@ class Config:
     
     # === 自选股配置 ===
     #stock_list: List[str] = field(default_factory=list)
-    stock_list: List[str] = [002195,002173,002792,000737,002716,002119]
+    stock_list: List[str] = ['002195','002173','002792','000737','002716','002119']
 
     # === 飞书云文档配置 ===
     feishu_app_id: Optional[str] = None
@@ -59,8 +59,7 @@ class Config:
     
     # === 搜索引擎配置（支持多 Key 负载均衡）===
     bocha_api_keys: List[str] = field(default_factory=list)  # Bocha API Keys
-    tavily_api_keys: List[str] = [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]  # Tavily API Keys
-    #tavily_api_keys: List[str] = field(default_factory=list)  # Tavily API Keys
+    tavily_api_keys: List[str] = field(default_factory=list)  # Tavily API Keys
     serpapi_keys: List[str] = field(default_factory=list)  # SerpAPI Keys
     
     # === 通知配置（可同时配置多个，全部推送）===
